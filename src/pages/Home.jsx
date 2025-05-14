@@ -1,20 +1,14 @@
 import React from 'react'
-import Navbar from '../components/shared/Navbar'
-import Hero from '../components/Home/Hero'
-import Features from '../components/Home/Features'
-import CallToAction from '../components/Home/CallToAction'
+import Header from '../Components/Header.jsx'
 
 const Home = () => {
-  return (
-    <main className="relative min-h-screen w-full bg-gray-900">
-      <Navbar />
-      <div className="pt-24 px-6">
-        <Hero />
-        <Features />
-        <CallToAction />
-      </div>
-    </main>
-  )
+    return (
+        /* Home Container */
+        <div className='relative flex flex-col items-center justify-start w-full h-screen'>
+            <Header />
+            <img src="../Public\assets\home\background-home-desktop.jpg" alt="home-bg" className='absolute top-0 left-0 w-full h-full object-cover z-[-1]' />
+        </div>
+    )
 }
 
-export default Home 
+export default Home
