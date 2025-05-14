@@ -12,9 +12,9 @@ export default {
         'white': '#FFFFFF',
       },
       fontFamily: {
-        'bellefair': ['Bellefair', 'serif'],
-        'barlow': ['Barlow', 'sans-serif'],
-        'barlow-condensed': ['Barlow Condensed', 'sans-serif'],
+        'Barlow': ['Barlow', 'sans-serif'],
+        'Barlow-Condensed': ['Barlow Condensed', 'sans-serif'],
+        'bellefair': ['Bellefair', 'serif']
       },
     },
   },
