@@ -4,7 +4,7 @@ import Navigation from '../UI/Navigation'
 const Header = () => {
     return (
         <div className='
-        relative flex flex-row w-full items-center justify-start gap-12 pl-12 mt-12
+        relative flex flex-row w-full items-center justify-start gap-12 pl-12 mt-12 z-10
         md:gap-8
         '>
             {/* Logo */}
