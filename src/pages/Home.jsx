@@ -11,7 +11,7 @@ const Home = () => {
             <main className='flex flex-row items-end justify-center w-full h-full'>
                 <section className="
                 flex flex-row items-center justify-between w-full
-                lg:max-w-[72rem] lg:pb-64 lg:px-24
+                lg:max-w-[80rem] lg:pb-64 lg:px-24
                 ">
                     {/* Text Layout */} 
                     <div className="
