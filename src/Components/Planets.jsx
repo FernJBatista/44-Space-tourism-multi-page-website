@@ -24,19 +24,16 @@ const Planets = () => {
     return (
         <div className="flex flex-row items-center justify-center w-full h-full">
         <section className="
-        flex flex-row items-center justify-between w-full gap-32
-        md:flex-col md:gap-24
-        lg:max-w-[80rem] lg:px-24 lg:flex-row
+        flex items-center justify-between w-full flex-col gap-24 px-6
+        lg:max-w-[80rem] lg:px-24 lg:flex-row lg:gap-32
         ">
             {/* Pick Destination Container */}
             <div className="
-            flex flex-col gap-4 w-full relative
-            md:max-w-[32rem]  md:items-center md:justify-center
+            flex flex-col gap-4 w-full relative max-w-[32rem]  items-center justify-center
             lg:w-[112rem] lg:gap-24 lg:items-start lg:justify-start
             ">
                 <h1 className="
-                z-10 uppercase text-gray-300 tracking-wider flex flex-row
-                md:absolute md:w-full md:text-center md:text-3xl md:gap-2 md:items-center md:justify-center
+                z-10 uppercase text-gray-300 tracking-wider flex flex-row absolute w-full text-center text-3xl gap-2 items-center justify-center
                 lg:text-4xl lg:relative lg:text-start lg:font-normal lg:gap-4 lg:items-start lg:justify-start
                 ">
                     <span className="lg:text-gray-600">01</span> Pick your destination
@@ -46,23 +43,20 @@ const Planets = () => {
                     src={selectedPlanet.images.png}
                     alt={selectedPlanet.name}
                     className="
-                    w-full h-full object-cover z-0 
-                    md:max-w-[24rem]
-                    lg:max-w-[rem]
+                    w-full h-full object-cover z-0 max-w-[24rem]
+                    lg:max-w-[56rem]
                     "
                 />
             </div>
 
             {/* Planets Text Container */}
-            <div className="flex flex-col gap-4 w-full
-            md:w-full md:max-w-[40rem] md:items-center md:text-center
-            lg:w-[50%] lg:gap-8 lg:text-start
+            <div className="flex flex-col gap-4 w-full max-w-[40rem] items-center text-center
+            lg:w-[50%] lg:gap-8 lg:text-start lg:items-start
             ">
             {/* Planet selector */}
             <div className="
-            flex flex-row w-full
-            md:items-center md:justify-center
-            lg:w-full lg:items-start lg:justify-start
+            flex flex-row w-full items-center justify-center
+            lg:items-start lg:justify-start
             ">
                 <ul className="flex flex-row gap-12">
                 {data.destinations.map((planet, index) => (
@@ -85,8 +79,7 @@ const Planets = () => {
 
             {/* Planet Info Container */}
             <div className="
-            flex flex-col w-full
-            md:items-center md:justify-center
+            flex flex-col w-full items-center justify-center
             lg:items-start lg:justify-start
             ">
                 <h2 className="
@@ -96,24 +89,22 @@ const Planets = () => {
                 {selectedPlanet.name}
                 </h2>
                 <p className="
-                text-gray-400 text-xl mt-8 tracking-wider leading-8
-                md:max-w-[50ch]
+                text-gray-400 text-xl mt-8 tracking-wider leading-8 max-w-[50ch]
                 lag:max-w-[56ch]
                 ">
                 {selectedPlanet.description}
                 </p>
                 {/* Divider */}
-                <div className="w-full h-[1px] bg-gray-700 mt-16
-                md:max-w-[32rem]
-                lg:w-full
-                " />
+                <div 
+                className="
+                    w-full h-[1px] bg-gray-700 mt-12 max-w-[32rem]
+                    lg:w-full lg:mt-16"/>
             </div>
 
             {/* Planet Details */}
             <div className="
-            flex flex-row w-full
-            md:items-center md:justify-center md:gap-8
-            lg:w-full lg:items-start lg:justify-start lg:gap-12
+            flex flex-row w-full items-center justify-between gap-8 px-4 max-w-[24rem]
+            lg:items-start lg:justify-start lg:gap-12
             ">
                 <div className="flex flex-col gap-0.5">
                 <h3 className="uppercase text-gray-500 text-base">Avg. Distance</h3>
