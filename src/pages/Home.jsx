@@ -14,10 +14,6 @@ const Home = () => {
                     media="(min-width: 640px)"
                     srcSet="/assets/home/background-home-tablet.jpg"
                 />
-                <source
-                    media="(min-width: 480px)"
-                    srcSet="/assets/home/background-home-mobile.jpg"
-                />
                 <img
                     src="/assets/home/background-home-mobile.jpg" 
                     alt="background"
