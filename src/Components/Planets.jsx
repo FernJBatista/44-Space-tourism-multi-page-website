@@ -7,7 +7,7 @@ const Planets = () => {
 
   // Fetch data once
     useEffect(() => {
-    fetch('../Public/data.json')
+    fetch('./data.json')
         .then((response) => response.json())
         .then((json) => setData(json))
         .catch((error) => console.log('Error fetching data:', error));
