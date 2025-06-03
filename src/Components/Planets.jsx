@@ -7,7 +7,7 @@ const Planets = () => {
 
   // Fetch data once
     useEffect(() => {
-    fetch('./data.json')
+    fetch('/data.json')
         .then((response) => response.json())
         .then((json) => setData(json))
         .catch((error) => console.log('Error fetching data:', error));
@@ -40,7 +40,7 @@ const Planets = () => {
                 </h1>
                 {/* Planet Image */}
                 <img
-                    src={selectedPlanet.images.png}
+                    src={`/assets/destination/image-${selectedPlanet.name.toLowercase()}.png`}
                     alt={selectedPlanet.name}
                     className="
                     w-full h-full object-cover z-0 max-w-[24rem]
