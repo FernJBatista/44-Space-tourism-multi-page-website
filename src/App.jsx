@@ -1,7 +1,7 @@
-import Home from './Pages/Home'
-import Destination from './Pages/Destination'
-import Crew from './Pages/Crew'
-import Technology from './Pages/Technology'
+import Home from './pages/Home.jsx'
+import Destination from './pages/Destination.jsx'
+import Crew from './pages/Crew.jsx'
+import Technology from './pages/Technology.jsx'
 import { Routes, Route } from 'react-router-dom'
 
 import Header from './Components/Header'
