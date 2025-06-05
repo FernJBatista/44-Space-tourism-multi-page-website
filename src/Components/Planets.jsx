@@ -40,12 +40,9 @@ const Planets = () => {
                 </h1>
                 {/* Planet Image */}
                 <img
-                    src={`/assets/destination/image-${selectedPlanet.name.toLowercase()}.png`}
+                    src={`/assets/destination/image-${selectedPlanet.name.toLowerCase()}.png`}
                     alt={selectedPlanet.name}
-                    className="
-                    w-full h-full object-cover z-0 max-w-[24rem]
-                    lg:max-w-[56rem]
-                    "
+                    className="w-full h-full object-cover z-0 max-w-[24rem] lg:max-w-[56rem]"
                 />
             </div>
 
