@@ -16,7 +16,7 @@ const Header = () => {
         '>
             {/* Logo */}
             <img 
-            src="../public/assets/shared/logo.svg"
+            src="/assets/shared/logo.svg"
             alt="logo"
             className='
                 w-8 h-8
